@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : liul
+Source Server         : murongyehua
 Source Server Version : 50720
 Source Host           : localhost:3306
 Source Database       : ecase
