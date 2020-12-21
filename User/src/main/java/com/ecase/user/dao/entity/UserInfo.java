@@ -27,6 +27,8 @@ public class UserInfo {
 
     private String nickname;
 
+    private String type;
+
     private Integer version;
 
     private String remark;

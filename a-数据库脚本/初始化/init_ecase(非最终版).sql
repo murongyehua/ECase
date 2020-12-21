@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : murongyehua
+Source Server         : liul
 Source Server Version : 50720
 Source Host           : localhost:3306
 Source Database       : ecase
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50720
 File Encoding         : 65001
 
-Date: 2020-12-18 16:04:27
+Date: 2020-12-21 16:40:01
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,10 +31,6 @@ CREATE TABLE `ecase_project_info` (
   `history_flag` char(1) NOT NULL COMMENT '历史标记',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of ecase_project_info
--- ----------------------------
 
 -- ----------------------------
 -- Table structure for ecase_project_template_field
@@ -59,10 +55,6 @@ CREATE TABLE `ecase_project_template_field` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of ecase_project_template_field
--- ----------------------------
-
--- ----------------------------
 -- Table structure for ecase_project_version
 -- ----------------------------
 DROP TABLE IF EXISTS `ecase_project_version`;
@@ -82,10 +74,6 @@ CREATE TABLE `ecase_project_version` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of ecase_project_version
--- ----------------------------
-
--- ----------------------------
 -- Table structure for ecase_user_info
 -- ----------------------------
 DROP TABLE IF EXISTS `ecase_user_info`;
@@ -101,13 +89,9 @@ CREATE TABLE `ecase_user_info` (
   `last_modify_user` varchar(32) NOT NULL COMMENT '最后修改人',
   `last_modify_time` varchar(20) NOT NULL COMMENT '最后修改时间',
   `history_flag` char(1) NOT NULL COMMENT '历史标记',
+  `type` char(1) DEFAULT NULL COMMENT '用户类型',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of ecase_user_info
--- ----------------------------
-INSERT INTO `ecase_user_info` VALUES ('1', '1', '1', '1', '1', null, '123', '123', '123', '123', '1');
 
 -- ----------------------------
 -- Table structure for ecase_user_right
@@ -127,7 +111,3 @@ CREATE TABLE `ecase_user_right` (
   `history_flag` char(1) NOT NULL COMMENT '历史标记',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of ecase_user_right
--- ----------------------------
